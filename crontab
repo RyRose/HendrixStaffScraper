@@ -1,0 +1,6 @@
+MAILTO=RosadeApps@gmail.com
+# Runs pull script once a week every monday at 12:00 AM
+0 0 * * 1  cd ~/HendrixStaffScraper; python3 script.py
+
+# Runs version check once a day at 12 PM to diff the old staff XML with the new.
+0 12 * * * cd ~/HendrixStaffScraper; ./scripts/check_new_staff.sh
